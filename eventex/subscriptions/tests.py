@@ -109,4 +109,4 @@ class SubscribeSuccessMessage(TestCase):
         data = dict(name='Bruno Barbosa', cpf='12345678901',
                     email='bsbruno1@gmail.com', phone='61-8121-0000')
         response = self.client.post('/inscricao/', data, follow=True)
-        self.assertContains(response, 'teste')
+        self.assertContains(response, 'Inscrição realizada com sucesso!')
