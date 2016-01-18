@@ -23,7 +23,7 @@ source .wttd/bin/activate
 ```
 4. Instale as dependências do projeto;
 ```console
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 5. Configure a instância com .env
 ```console
