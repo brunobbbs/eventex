@@ -3,6 +3,8 @@ Eventex
 
 Repositório de estudo do projeto realizado no curso [**Welcome to the Django**](http://welcometothedjango.com.br/)
 
+[![Build Status](https://travis-ci.org/brunobbbs/eventex.svg?branch=master)](https://travis-ci.org/brunobbbs/eventex)
+
 
 ## Como instalar?
 
