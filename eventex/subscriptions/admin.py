@@ -11,7 +11,7 @@ class SubscriptionAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
 
     def subscribed_today(self, obj):
-        return obj.created_at == now().date()
+        return obj.created_at.date() == now().date()
 
     subscribed_today.short_description = 'Inscrito hoje?'
     subscribed_today.boolean = True
