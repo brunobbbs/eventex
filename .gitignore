@@ -1,6 +1,7 @@
 *.pyc
 .env
 .wttd
+.eventex
 *.sqlite3
 __pycache__
 *.sublime-project
