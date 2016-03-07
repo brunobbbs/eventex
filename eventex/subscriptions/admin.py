@@ -19,7 +19,16 @@ class SubscriptionModelAdmin(admin.ModelAdmin):
     subscribed_today.boolean = True
 
     def mark_as_paid(self, request, queryset):
-        pass
+        count = queryset.update(paid=True)
+
+        if count == 1:
+            msg = '{} inscrição foi marcada como paga.'
+        else:
+            msg = '{} inscrições foram marcadas como pagas'
+
+        self.message_user(request, msg.format(count))
+
+    mark_as_paid.short_description = 'Marcar como pago'
 
 
 admin.site.register(Subscription, SubscriptionModelAdmin)
